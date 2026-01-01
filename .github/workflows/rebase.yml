@@ -4,9 +4,9 @@ on: [pull_request_target]
 
 jobs:
   _:
-    name: "Automatic Rebase"
+    name: Automatic Rebase
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v2

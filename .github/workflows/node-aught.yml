@@ -6,13 +6,13 @@ jobs:
   tests:
     uses: ljharb/actions/.github/workflows/node.yml@ae1f8642186091037ed43bc02e9cb669d3f3dc2d
     with:
-      range: '< 10'
+      range: < 10
       type: minors
       command: npm run tests-only
 
   node:
-    name: 'node < 10'
+    name: node < 10
     needs: [tests]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - run: 'echo tests completed'
+      - run: echo tests completed

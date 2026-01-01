@@ -4,9 +4,9 @@ on: [pull_request_target]
 
 jobs:
   _:
-    name: "Require “Allow Edits”"
+    name: Require “Allow Edits”
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: ljharb/require-allow-edits@main
