@@ -4,7 +4,7 @@ on: [pull_request, push]
 
 jobs:
   tests:
-    uses: ljharb/actions/.github/workflows/node.yml@main
+    uses: ljharb/actions/.github/workflows/node.yml@ae1f8642186091037ed43bc02e9cb669d3f3dc2d
     with:
       range: '>= 10'
       type: minors
